@@ -1,0 +1,4 @@
+<div *ngIf="!(loading$ |async)">
+    Listado de pokemons
+</div>
+<div *ngFor="let pokemon of pokemons$|async">{{pokemon.name}}</div>
